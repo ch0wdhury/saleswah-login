@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts & Fontawesome CDN -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="icon" href="images/Saleswah-logo.png">
+
+    <title>Salewah CRM Login</title>
+  </head>
+  <body>
+    <!-- Header Section Starts -->
+ <header class="fixed-top">
+	<div class="container-fluid">
+		<!-- Menubar Section -->
+		 	<nav class="navbar navbar-expand-md navbar-light bg-white">
+			  <a class="navbar-brand" href="index.html"><img src="images/Saleswah-logo.png" alt="Saleswah" class="img-fluid"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarcontent">
+			    <ul class="navbar-nav custom_navbar ml-auto">
+			    	<li class="nav-item">
+			      		<p>Don't have a Saleswah account?</p>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="btn custom_btn" href="/Registration/Reg_UserType">SIGN UP</a>
+			      	</li>
+			    </ul>
+			  </div>
+			</nav>
+		<!-- Menubar Section -->
+	</div>
+ </header>
+    <!-- Header Section Ends -->
+	<!-- Login Form Section Starts -->
+<section class="loginform">
+	<div class="container">
+		<div class="row">
+			<div class="offset-xl-4 offset-lg-4 offset-md-3 offset-sm-1 col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+				<div class="form_section">
+					<div class="card-header custom_cardhead">
+					  	<h1><i class="fas fa-user"></i> Secured Login</h1>
+					  </div>
+					<div class="card">
+					  <div class="card-body custom_cbody">
+					  	<!-- Login Form Section -->
+					   <form method="POST" class="custom_login_form">
+						  		<!-- Name Input -->
+						  <div class="form-group row">
+						    <label for="account_name" class="col-2"><i class="fas fa-user"></i></label>
+						    <input type="text" class="form-control col-9" id="account_name" placeholder="Your Short Account Name" name="name" autocomplete="off">
+						    	<div class="valid-feedback text-right">
+									Looks good!
+								</div>
+								<div class="invalid-feedback text-right">
+							  		Looks bad!
+								</div>
+						  </div>
+						  		<!-- Name Input -->
+						  		<!-- Email Input -->
+						  <div class="form-group row">
+						    <label for="login_email" class="col-2"><i class="fas fa-envelope"></i></label>
+						    <input type="email" class="form-control col-9" id="login_email" aria-describedby="emailHelp" placeholder="Your Email Address" name="email">
+						    	<div class="valid-feedback text-right">
+									Looks good!
+								</div>
+								<div class="invalid-feedback text-right">
+							  		Looks bad!
+								</div>
+						  </div>
+						  		<!-- Email Input -->
+						  		<!-- Password Input -->
+						  <div class="form-group row">
+						    <label for="login_password" class="col-2"><i class="fas fa-lock"></i></label>
+						    <input type="password" class="form-control col-9" id="login_password" placeholder="Your Password" name="password">
+						    	<div class="valid-feedback text-right">
+									Looks good!
+								</div>
+								<div class="invalid-feedback text-right">
+							  		Looks bad!
+								</div>
+						    <small class="form-text ml-auto"><a href="#forgotpassword" data-toggle="modal" data-target="#forgotpassword"><i class="fas fa-lock"></i> Forgot password?</a></small>
+						  </div>
+						  		<!-- Password Input -->
+						  		<!-- Login Button -->
+						  <div class="form-group text-center">
+						    <button class="btn custom_btn" type="submit">LOGIN</button>
+						  </div>
+						  		<!-- Login Button -->
+						  <hr>
+						  		<!-- Login Using Social Icons -->
+						  <p class="text-center mb-1">Log in using</p>
+						  <ul class="list-inline social_icons text-center">
+						  	<li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+						  	<li class="list-inline-item"><a href="#"><i class="fab fa-microsoft"></i></a></li>
+						  	<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						  	<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+						  </ul>
+						  		<!-- Login Using Social Icons -->
+						  <hr>
+						  		<!-- Terms & Conditions -->
+						  <div class="form-group form-check">
+						    <input type="checkbox" class="form-check-input" id="agree_checkbox">
+						    <label class="form-check-label terms_policy" for="agree_checkbox">I confirm having read and accepted the <a href="../terms-of-services/index.html">Terms of Services</a> and <a href="../privacy-policy/index.html">Privacy Policy</a></label>
+						    	<div class="invalid-feedback">
+								  	You must  agree Terms & Conditions, Privacy Policy before submitting.
+								</div>
+						  </div>
+						  		<!-- Terms & Conditions -->
+						</form>
+					  	<!-- Login Form Section -->
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<!-- Forgot Password -->
+		<div class="modal custom_modal" id="forgotpassword" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header custom_cardhead">
+		        <h1 class="text-center"><i class="fas fa-user"></i> Forgot Password?</h1>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span class="text-white" aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body custom_mbody">
+				<form method="POST" class="custom_login_form">
+						  		<!-- Name Input -->
+					<div class="form-group row">
+						<label for="account_name" class="offset-1 col-2"><i class="fas fa-user"></i></label>
+						<input type="text" class="form-control col-8" id="account_name" placeholder="Your Short Account Name" name="name" autocomplete="off">
+						<div class="valid-feedback text-center">
+							Looks good!
+						</div>
+						<div class="invalid-feedback text-center">
+							Looks bad!
+						</div>
+						</div>
+						  		<!-- Name Input -->
+						  		<!-- Email Input -->
+					<div class="form-group row">
+						<label for="login_email" class="offset-1 col-2"><i class="fas fa-envelope"></i></label>
+						<input type="email" class="form-control col-8" id="login_email" aria-describedby="emailHelp" placeholder="Your Email Address" name="email">
+						   	<div class="valid-feedback text-center">
+								Looks good!
+							</div>
+							<div class="invalid-feedback text-center">
+							  	Looks bad!
+							</div>
+					</div>
+						  		<!-- Email Input -->
+					<div class="form-group text-center">
+						<button class="btn custom_btn" type="submit">SUBMIT</button>
+					</div>
+				</form>
+		    </div>
+		  </div>
+		</div>
+					<!-- Forgot Password -->
+	</div>
+</section>
+	<!-- Login Form Section Ends -->
+	<!-- Footer Section Starts -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<p>&copy; 2017 Saleswah | All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+	<!-- Footer Section Ends -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
