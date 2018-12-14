@@ -81,7 +81,7 @@ header {
 .custom_login_form label i {
 	color: #9E9E9E;
 	font-size: 22px;
-	margin-top: 5px;
+	padding-top: 10px;
 }
 .custom_login_form input {
 	border: none;
