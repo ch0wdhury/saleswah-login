@@ -88,6 +88,12 @@ header {
 	outline: none;
 	border-bottom: 1px solid #9E9E9E;
 }
+input[type="text"], [type="email"], [type="password"] {
+	outline: none;
+	box-shadow:none !important;
+	border-bottom: 1px solid #63C6AE;
+	border-radius: 0px;
+}
 .social_icons li a {
 	text-decoration: none;
 	color: #9E9E9E;
