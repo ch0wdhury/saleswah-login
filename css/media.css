@@ -3,6 +3,14 @@
 	.navbar-brand {
 		width: 70%;
 	}
+	.form_section {
+		margin-top: 150px;
+		margin-bottom: 50px;
+	}
+	footer p {
+		margin: 10px;
+		font-size: 14px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
