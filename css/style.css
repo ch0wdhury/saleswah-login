@@ -78,7 +78,7 @@ header {
 .custom_cbody {
 	margin-top: 50px;
 }
-.custom_login_form label i {
+.input_ico i {
 	color: #9E9E9E;
 	font-size: 22px;
 	padding-top: 10px;
@@ -87,6 +87,29 @@ header {
 	border: none;
 	outline: none;
 	border-bottom: 1px solid #9E9E9E;
+}
+.form-group {
+  	position: relative;
+}
+.form-control-placeholder {
+  	position: absolute;
+  	top: 10px;
+  	left: 60px;
+  	transition: .5s ease;
+  	opacity: 0.5;
+}
+.margin_left {
+	position: absolute;
+  	top: 10px;
+  	left: 120px;
+  	transition: .5s ease;
+  	opacity: 0.5;
+}
+.form-control:focus + .form-control-placeholder,
+.is-valid, .is-invalid + .form-control-placeholder {
+  	font-size: 75%;
+  	transform: translate3d(0, -100%, 0);
+  	opacity: 1;
 }
 input[type="text"], [type="email"], [type="password"] {
 	outline: none;
