@@ -1,11 +1,11 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 	.navbar-brand {
-		width: 70%;
+		width: 50%;
 	}
 	.form_section {
-		margin-top: 150px;
-		margin-bottom: 50px;
+		margin-top: 90px;
+		margin-bottom: 10px;
 	}
 	.form-control-placeholder {
 	  	position: absolute;
@@ -29,11 +29,23 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-
+	.navbar-brand {
+		width: 40%;
+	}
+	.form_section {
+		margin-top: 120px;
+		margin-bottom: 20px;
+	}
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+	.navbar-brand {
+		width: 20%;
+	}
+	.form_section {
+		margin-top: 85px;
+		margin-bottom: 15px;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */

@@ -2,6 +2,8 @@
 
 html, body {
 	overflow-x: hidden;
+	width:100%;
+    height:100%;
 }
 * {
 	margin: 0;
@@ -11,8 +13,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+	background-size: 100%;
+	background-position: center;
+	width:100%;
+    height:100%;
 }
 
 /* Header Section Starts */
@@ -21,6 +25,10 @@ header {
 	-webkit-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.8);
 	-moz-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.8);
 	box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.8);
+	min-height: 50px;
+}
+.navbar-brand {
+	width: 13%;
 }
 .custom_navbar li {
 	margin-left: 20px;
@@ -49,8 +57,8 @@ header {
 /* Header Section Ends */
 /* Login Form Section Starts */
 .form_section {
-	margin-top: 180px;
-	margin-bottom: 80px;
+	margin-top: 105px;
+	margin-bottom: 20px;
 	position: relative;
 	-webkit-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.18);
 	-moz-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.18);
@@ -64,7 +72,7 @@ header {
 	-moz-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.8);
 	box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.8);
 	position: absolute;
-	top: -30px;
+	top: -20px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -76,7 +84,7 @@ header {
 	margin-top: 10px;
 }
 .custom_cbody {
-	margin-top: 50px;
+	margin-top: 40px;
 }
 .input_ico i {
 	color: #9E9E9E;
@@ -111,6 +119,12 @@ header {
   	transform: translate3d(0, -100%, 0);
   	opacity: 1;
 }
+.form-control:focus + .form-control-placeholder,
+.is-invalid, .is-valid + .form-control-placeholder {
+  	font-size: 75%;
+  	transform: translate3d(0, -100%, 0);
+  	opacity: 1;
+}
 #agree_checkbox {
   	font-size: 100%;
   	transform: translate3d(0, 0, 0)!important;
@@ -121,6 +135,16 @@ input[type="text"], [type="email"], [type="password"] {
 	box-shadow:none !important;
 	border-bottom: 1px solid #63C6AE;
 	border-radius: 0px;
+  	font-size: 100%;
+  	padding-bottom: 0;
+  	transform: none;
+  	opacity: 1;
+}
+.valid-feedback {
+	margin-left: 60px;
+}
+.invalid-feedback {
+	margin-left: 60px;
 }
 .social_icons li a {
 	text-decoration: none;
@@ -140,13 +164,19 @@ input[type="text"], [type="email"], [type="password"] {
 .custom_mbody {
 	margin-top: 50px;
 }
+.fp_head {
+	margin: 5px auto;
+}
+.custom_cardhead button {
+	padding-top: 25px!important;
+}
 /* Login Form Section Ends */
 /* Footer Section Starts */
 footer {
 	background-color: #63C6AE;
 }
 footer p {
-	margin: 20px;
 	color: #fff;
+	margin: 0;
 }
 /* Footer Section Ends */
